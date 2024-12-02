@@ -193,7 +193,8 @@ extension BaseCoordinator {
     ///     - completion:
     ///         The closure to be called whenever the transition completes.
     ///         Hint: Might be called multiple times but only once per performing the transition.
-    ///
+    
+    @MainActor
     public func registerInteractiveTransition<GestureRecognizer: UIGestureRecognizer>(
         for route: RouteType,
         triggeredBy recognizer: GestureRecognizer,
