@@ -83,7 +83,7 @@ public class AnyCoordinator<RouteType: Route, TransitionType: TransitionProtocol
     ///
     /// - Returns:
     ///     The prepared transition.
-    ///
+    
     public func prepareTransition(for route: RouteType) -> TransitionType {
         _prepareTransition(route)
     }

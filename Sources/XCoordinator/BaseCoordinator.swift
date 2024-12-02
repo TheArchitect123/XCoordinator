@@ -95,6 +95,7 @@ open class BaseCoordinator<RouteType: Route, TransitionType: TransitionProtocol>
     /// - Returns:
     ///     The prepared transition.
     ///
+    @MainActor
     open func prepareTransition(for route: RouteType) -> TransitionType {
         fatalError("Please override the \(#function) method.")
     }
